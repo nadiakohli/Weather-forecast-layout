@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather forecast</title>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="short-info-wrap">
+        <div class="day-info">
+          <div class="search-form">
+            <input type="search" id="site-search" name="q" placeholder="Type city here..." disabled>
+            <button class="search-btn">Search</button>
+          </div>
+          <div class="current-day-info">
+            <h1>Thursday</h1>
+            <p><i>"scattered clouds"</i></p>
+          </div>
+          <img class="current-weather-icon" src="icons/clouds.png" alt="Current weather icon">
+        </div>
+      </div>
+      <div class="img-wrap-bg">
+        <div class="current-temperature">
+          <p>23°</p>
+        </div>
+      </div>
+    </div>
+    <div class="info-wrap">
+      <div class="header line">
+        <div class="info-details">
+          <h1>My Cities (1/5)</h1>
+          <div class="additionals-buttons">
+            <button class="celsius-btn">Celsius</button>
+            <button class="fahrenheit-btn">Fahrenheit</button>
+            <button class="translate-btn">Translate</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-info">
+        <div class="main-info-btn-wrap">
+          <button>Timeline</button>
+          <button class="opacity">Week</button>
+        </div>
+        <div class="main-info-blocks">
+          <div class="main-info-block">
+            <img class="weather-icon" src="icons/clouds.png" alt="Weather icon">
+            <h1 class="test">23°</h1>
+            <h2>9:00</h2>
+          </div>
+          <div class="main-info-block">
+            <img class="weather-icon" src="icons/clear sky.png" alt="Weather icon">
+            <h1 class="test">28°</h1>
+            <h2>12:00</h2>
+          </div>
+          <div class="main-info-block">
+            <img class="weather-icon" src="icons/sun.png" alt="Weather icon">
+            <h1 class="test">32°</h1>
+            <h2>15:00</h2>
+          </div>
+          <div class="main-info-block">
+            <img class="weather-icon" src="icons/sun.png" alt="Weather icon">
+            <h1 class="test">33°</h1>
+            <h2>18:00</h2>
+          </div>
+          <div class="main-info-block">
+            <img class="weather-icon" src="icons/moon with clouds.png" alt="Weather icon">
+            <h1 class="test">30°</h1>
+            <h2>21:00</h2>
+          </div>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="additional-info-btn-wrap">
+          <button>Today's highlights</button>
+        </div>
+        <div class="additional-info-blocks">
+          <div class="additional-info-block">
+            <h1>Humidity</h1>
+            <img class="weather-icon" src="icons/humidity.png" alt="Weather icon">
+            <p>31%</p>
+          </div>
+          <div class="additional-info-block">
+            <h1>Pressure</h1>
+            <img class="weather-icon" src="icons/barometer.png" alt="Weather icon">
+            <p>1020hPa</p>
+          </div>
+          <div class="additional-info-block flex">
+            <div class="white-bg">
+              <img class="weather-icon" src="icons/freezing.png" alt="Weather icon">
+              <h1>23°</h1>
+            </div>
+            <div class="color-bg">
+              <img class="weather-icon" src="icons/hot.png" alt="Weather icon">
+              <h1>33°</h1>
+            </div>
+          </div>
+        </div>
+        <div class="additional-info-blocks">
+          <div class="additional-info-block">
+            <h1>Cloud Coverege</h1>
+            <img class="weather-icon" src="icons/clouds.png" alt="Weather icon">
+            <p>31%</p>
+          </div>
+          <div class="additional-info-block">
+            <h1>Wind Speed</h1>
+            <img class="weather-icon" src="icons/wind.png" alt="Weather icon">
+            <p>2.56m/s</p>
+          </div>
+          <div class="additional-info-block flex">
+            <div class="white-bg">
+              <img class="weather-icon" src="icons/sunrise.png" alt="Weather icon">
+              <h1>6:58</h1>
+            </div>
+            <div class="color-bg">
+              <img class="weather-icon" src="icons/sunset.png" alt="Weather icon">
+              <h1>21:43</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
