@@ -9,11 +9,7 @@
   src: url('font/Lato-BoldItalic.ttf');
 }
 
-body {
-  font-family: Lato, sanserif;
-}
-
-button {
+body, button {
   font-family: Lato, sanserif;
 }
 
@@ -24,6 +20,10 @@ input[type="search"] {
 
 input:disabled {
   background-color: #fff;
+}
+
+input::placeholder {
+  font-size: 10px;
 }
 
 .main-wrapper {
@@ -309,3 +309,139 @@ input:disabled {
 .additional-info-block h1 {
   font-size: 18px;
 }
+
+/* adaptation */
+@media screen and (max-width: 1280px) {
+  input[type="search"] {
+    padding: 4px 2px;
+    border-radius: 10px 0 0 0;
+  }
+  
+  .container {
+    height: 600px; 
+    width: 240px;
+  }
+  
+  .short-info-wrap {
+    height: 100%;
+    border-radius: 15px 0 0 0;
+  }
+  
+  .day-info {
+    margin-top: 20px;
+    height: 75%;
+  }
+
+  .search-btn {
+    font-size: 10px;
+  }
+  
+  .current-day-info h1 {
+    font-size: 31px;
+  }
+  
+  .current-day-info p {
+    font-size: 13px;
+    opacity: 75%;
+  }
+  
+  .current-weather-icon {
+    width: 85px;
+  }
+  
+  .img-wrap-bg {
+    border-radius: 0 0 0 15px;
+  }
+  
+  .current-temperature {
+    top: -37px;
+    width: 75px;
+    height: 75px;
+  }
+  
+  .current-temperature p {
+    font-size: 34px;
+  }
+  
+  .info-wrap {
+    width: 500px;
+    height: 600px;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .info-details {
+    width: 90%;
+  }
+  
+  .info-details h1 {
+    font-size: 14px;
+  }
+
+  .celsius-btn, .fahrenheit-btn {
+    font-size: 14px;
+  }
+  
+  .translate-btn {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .main-info-btn-wrap button, .additional-info-btn-wrap button {
+    margin-top: 5px;
+    font-size: 21px;
+  }
+
+  .main-info-blocks {
+    width: 100%;
+  }
+  
+  .main-info-block {
+    width: 88px;
+    height: 111px;
+    border-radius: 6px;
+  }
+  
+  .weather-icon {
+    width: 35px;
+  }
+  
+  .main-info-block h1 {
+    font-size: 14px;
+  }
+  
+  .main-info-block h2 {
+    font-size: 11px;
+  }
+  
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .additional-info-btn-wrap {
+    align-self: flex-start;
+  }
+  
+  .additional-info-blocks {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+  
+  .additional-info-block {
+    width: 145px;
+    height: 125px;
+  }
+  
+  .additional-info-block p {
+    font-size: 11px;
+  }
+  
+  .additional-info-block h1 {
+    font-size: 14px;
+  }
+};
